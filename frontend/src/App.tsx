@@ -29,6 +29,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <p className='text-3xl'>이것은 프리텐다드 폰트입니다.</p>
     </BrowserRouter>
   )
 }

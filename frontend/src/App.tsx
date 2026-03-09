@@ -3,33 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { BrowserRouter } from 'react-router-dom'
+import Header from './components/common/Header'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="bg-background font-pretendard text-text-main min-h-screen w-full">
+        <Header />
+        <main className="p-8">
+          <h2>main 화면</h2>
+        </main>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <p className='text-3xl'>이것은 프리텐다드 폰트입니다.</p>
     </BrowserRouter>
   )
 }
